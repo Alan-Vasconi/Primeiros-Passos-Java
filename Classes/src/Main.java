@@ -9,6 +9,13 @@ public class Main {
         cachorro1.comprimento = 50;
         cachorro1.cor = "Preto";
         cachorro1.peso = 18.5;
-        System.out.println(cachorro1); // Pode-se perceber o endereço que tem na memória
+        
+        cachorro1.pegar();
+        System.out.println("O cachorro pegou uma " + cachorro1.pegar());
+
+        System.out.println("O cachorro está " + cachorro1.interacao("ofender"));
+        System.out.println("O cachorro está " + cachorro1.interacao("carinho"));
+        System.out.println("O cachorro está " + cachorro1.interacao("nada"));
+        // Manda uma ação que recebe uma resposta de acordo com a acao em cima do cachorro
     }
 }
